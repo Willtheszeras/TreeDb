@@ -1,11 +1,7 @@
 {
     "$schema": "./schema.json",
-    "name": "True Night's Edge",
-    "recipe":[
-        {
-            "item": {
-            "name": "Night's Edge",
-            "recipe": [
+    "name": "Night's Edge",
+    "recipe": [
         {
             "item": {
                 "name": "Muramasa",
@@ -89,7 +85,4 @@
             "amount": 1
         }
     ]
-        },
-        "amount": 1
-    }
 }
