@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "$id": "will://teraria/schema.json",
+    "title": "Teraria crafting data",
+    "description": "Data for teraria crafting tree",
+    "type": "object",
+    "properties": {
+        "$schema": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "recipe": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "item": {
+                        "oneOf": [
+                            {
+                                "$ref": "#"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "amount": {
+                        "type": "number"
+                    }
+                },
+                "required": ["item", "amount"],
+                "additionalProperties": false
+            },
+            "uniqueItems": true
+        }
+    },
+    "required": ["name", "recipe"],
+    "additionalProperties": false
+}
