@@ -35,8 +35,11 @@
                 "additionalProperties": false
             },
             "uniqueItems": true
+        },
+        "icon": {
+            "type": "string"
         }
     },
-    "required": ["name", "recipe"],
+    "required": ["name", "recipe", "icon"],
     "additionalProperties": false
 }

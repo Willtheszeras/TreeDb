@@ -1,64 +1,140 @@
 {
     "$schema": "./schema.json",
-    "name": "True Night's Edge",
+    "name": "Terra Blade",
     "recipe": [
         {
-            "item": {
-                "name": "Night's Edge",
+            "item":{
+                "name": "True Night's Edge",
                 "recipe": [
                     {
                         "item": {
-                            "name": "Muramasa",
-                            "recipe": []
-                        },
-                        "amount": 1
-                    },
-                    {
-                        "item": {
-                            "name": "Blade of Grass",
+                            "name": "Night's Edge",
                             "recipe": [
                                 {
                                     "item": {
-                                        "name": "Stinger",
+                                        "name": "Muramasa",
                                         "recipe": []
                                     },
-                                    "amount": 12
+                                    "amount": 1
                                 },
                                 {
                                     "item": {
-                                        "name": "Jungle Spores",
-                                        "recipe": []
-                                    },
-                                    "amount": 12
-                                }
-                            ]
-                        },
-                        "amount": 1
-                    },
-                    {
-                        "item": {
-                            "name": "Volcano",
-                            "recipe": [
-                                {
-                                    "item": {
-                                        "name": "Hellstone bars",
+                                        "name": "Blade of Grass",
                                         "recipe": [
                                             {
                                                 "item": {
-                                                    "name": "Hellstone",
+                                                    "name": "Stinger",
                                                     "recipe": []
                                                 },
-                                                "amount": 60
+                                                "amount": 12
                                             },
                                             {
                                                 "item": {
-                                                    "name": "Obsidian",
+                                                    "name": "Jungle Spores",
                                                     "recipe": []
+                                                },
+                                                "amount": 12
+                                            }
+                                        ]
+                                    },
+                                    "amount": 1
+                                },
+                                {
+                                    "item": {
+                                        "name": "Volcano",
+                                        "recipe": [
+                                            {
+                                                "item": {
+                                                    "name": "Hellstone bars",
+                                                    "recipe": [
+                                                        {
+                                                            "item": {
+                                                                "name": "Hellstone",
+                                                                "recipe": []
+                                                            },
+                                                            "amount": 60
+                                                        },
+                                                        {
+                                                            "item": {
+                                                                "name": "Obsidian",
+                                                                "recipe": []
+                                                            },
+                                                            "amount": 10
+                                                        }
+                                                    ]
+                                                },
+                                                "amount": 12
+                                            }
+                                        ]
+                                    },
+                                    "amount": 1
+                                },
+                                {
+                                    "item": {
+                                        "name": "Light's Bane",
+                                        "recipe": [
+                                            {
+                                                "item": {
+                                                    "name": "Demonite Bars",
+                                                    "recipe": [
+                                                        {
+                                                            "item": {
+                                                                "name": "Demonite ore",
+                                                                "recipe": []
+                                                            },
+                                                            "amount": 30
+                                                        }
+                                                    ]
                                                 },
                                                 "amount": 10
                                             }
                                         ]
                                     },
+                                    "amount": 1
+                                }
+                            ]
+                        
+                        },
+                        "amount": 1
+                    },
+                    {
+                        "item":{
+                            "name": "Soul of Might",
+                            "recipe": []
+                        },
+                        "amount": 20
+                    },
+                    {
+                        "item":{
+                            "name": "Soul of Fright",
+                            "recipe": []
+                        },
+                        "amount": 20
+                    },
+                    {
+                        "item":{
+                            "name": "Soul of Sight",
+                            "recipe": []
+                        },
+                        "amount": 20
+                    }
+                ]
+            },
+            "amount": 1
+        },
+        {
+            "item":{
+                "name": "True Excalibur",
+                "recipe": [
+                    {
+                        "item":{
+                            "name": "Excalibur",
+                            "recipe": [
+                                {
+                                    "item":{
+                                        "name": "Hallowed Bars",
+                                        "recipe": []
+                                    },
                                     "amount": 12
                                 }
                             ]
@@ -66,32 +142,32 @@
                         "amount": 1
                     },
                     {
-                        "item": {
-                            "name": "Light's Bane",
+                        "item":{
+                            "name": "Chlorophyte Bars",
                             "recipe": [
                                 {
-                                    "item": {
-                                        "name": "Demonite Bars",
-                                        "recipe": [
-                                            {
-                                                "item": {
-                                                    "name": "Demonite ore",
-                                                    "recipe": []
-                                                },
-                                                "amount": 30
-                                            }
-                                        ]
+                                    "item":{
+                                        "name": "Chlorophyte Ore",
+                                        "recipe": []
                                     },
-                                    "amount": 10
+                                    "amount": 120
                                 }
                             ]
                         },
-                        "amount": 1
+                        "amount": 24
                     }
                 ]
-            
+            },
+            "amount": 1
+        },
+        {
+            "item":{
+                "name": "Broken Hero Sword",
+                "recipe": [],
+                "icon": ""
             },
             "amount": 1
         }
-    ]
+    ],
+    "icon": "https://static.wikia.nocookie.net/terraria_gamepedia/images/4/4d/Terra_Blade.png/revision/latest?cb=20200516222805&format=original"
 }

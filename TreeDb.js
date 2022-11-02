@@ -9,7 +9,8 @@ window.addEventListener('DOMContentLoaded', function () {
             nodes.push({
                 data: {
                     id: obj.name,
-                    text: obj.name
+                    text: obj.name,
+                    image: obj.image
                 }
             });
             obj.recipe.forEach((i) => {
@@ -19,8 +20,8 @@ window.addEventListener('DOMContentLoaded', function () {
                 }
                 edges.push({
                     data: {
-                        source: obj.name,
-                        target: n || i.item,
+                        source: n || i.item,
+                        target: obj.name,
                         text: i.amount.toString()
                     }
                 });
@@ -45,9 +46,9 @@ window.addEventListener('DOMContentLoaded', function () {
                     style: {
                         // 'background-color': '#C6681E',
     
-                        // 'background-image': ["./factorio.png", "data(image)"],
+                        'background-image': ["data(image)"],
                         "text-valign": "center",
-                        "shape": "rectangle",
+                        "shape": "circle",
                         "width": 100,
                         "height": 100
     
@@ -60,7 +61,7 @@ window.addEventListener('DOMContentLoaded', function () {
                         'target-arrow-shape': 'triangle',
                         'line-color': '#BBBBBB',
                         'target-arrow-color': '#BBBBBB',
-                        // 'curve-style': 'taxi',
+                        'curve-style': 'bezier',
                     }
                 },
                 {
