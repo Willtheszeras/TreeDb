@@ -12,8 +12,7 @@
                             "recipe": [
                                 {
                                     "item": {
-                                        "name": "Muramasa",
-                                        "recipe": []
+                                        "name": "Muramasa"
                                     },
                                     "amount": 1
                                 },
@@ -23,15 +22,13 @@
                                         "recipe": [
                                             {
                                                 "item": {
-                                                    "name": "Stinger",
-                                                    "recipe": []
+                                                    "name": "Stinger"
                                                 },
                                                 "amount": 12
                                             },
                                             {
                                                 "item": {
-                                                    "name": "Jungle Spores",
-                                                    "recipe": []
+                                                    "name": "Jungle Spores"
                                                 },
                                                 "amount": 12
                                             }
@@ -49,15 +46,13 @@
                                                     "recipe": [
                                                         {
                                                             "item": {
-                                                                "name": "Hellstone",
-                                                                "recipe": []
+                                                                "name": "Hellstone"
                                                             },
                                                             "amount": 60
                                                         },
                                                         {
                                                             "item": {
-                                                                "name": "Obsidian",
-                                                                "recipe": []
+                                                                "name": "Obsidian"
                                                             },
                                                             "amount": 10
                                                         }
@@ -79,8 +74,7 @@
                                                     "recipe": [
                                                         {
                                                             "item": {
-                                                                "name": "Demonite ore",
-                                                                "recipe": []
+                                                                "name": "Demonite ore"
                                                             },
                                                             "amount": 30
                                                         }
@@ -99,22 +93,19 @@
                     },
                     {
                         "item":{
-                            "name": "Soul of Might",
-                            "recipe": []
+                            "name": "Soul of Might"
                         },
                         "amount": 20
                     },
                     {
                         "item":{
-                            "name": "Soul of Fright",
-                            "recipe": []
+                            "name": "Soul of Fright"
                         },
                         "amount": 20
                     },
                     {
                         "item":{
-                            "name": "Soul of Sight",
-                            "recipe": []
+                            "name": "Soul of Sight"
                         },
                         "amount": 20
                     }
@@ -132,8 +123,7 @@
                             "recipe": [
                                 {
                                     "item":{
-                                        "name": "Hallowed Bars",
-                                        "recipe": []
+                                        "name": "Hallowed Bars"
                                     },
                                     "amount": 12
                                 }
@@ -147,8 +137,7 @@
                             "recipe": [
                                 {
                                     "item":{
-                                        "name": "Chlorophyte Ore",
-                                        "recipe": []
+                                        "name": "Chlorophyte Ore"
                                     },
                                     "amount": 120
                                 }
@@ -162,9 +151,7 @@
         },
         {
             "item":{
-                "name": "Broken Hero Sword",
-                "recipe": [],
-                "icon": ""
+                "name": "Broken Hero Sword"
             },
             "amount": 1
         }

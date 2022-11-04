@@ -1,5 +1,4 @@
 window.addEventListener('DOMContentLoaded', function () {
-
     fetch("./data.json").then((a) => a.json()).then((data) => {
         const nodes = [];
         const edges = [];
@@ -10,10 +9,10 @@ window.addEventListener('DOMContentLoaded', function () {
                 data: {
                     id: obj.name,
                     text: obj.name,
-                    image: obj.image
+                    image: obj.icon
                 }
             });
-            obj.recipe.forEach((i) => {
+            obj.recipe?.forEach((i) => {
                 if (typeof i.item != "string") {
                     item(i.item);
                     var n = i.item.name;
@@ -48,7 +47,6 @@ window.addEventListener('DOMContentLoaded', function () {
     
                         'background-image': ["data(image)"],
                         "text-valign": "center",
-                        "shape": "circle",
                         "width": 100,
                         "height": 100
     
@@ -78,6 +76,8 @@ window.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        window.layout = () => cy.layout({name: "cose-bilkent"});
+        window.layout = () => cy.layout({ name: "cose-bilkent" }).run();
+
+        // window.show = () => 
     });
 });

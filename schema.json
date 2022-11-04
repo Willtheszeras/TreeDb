@@ -40,6 +40,6 @@
             "type": "string"
         }
     },
-    "required": ["name", "recipe", "icon"],
+    "required": ["name"],
     "additionalProperties": false
 }
