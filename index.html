@@ -1,42 +1,47 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <style>
-            body {
-                font-family: helvetica;
-                font-size: 14px;
-            }
-    
-            #cy {
-                width: 100%;
-                height: calc(100% - 2em);
-                position: absolute;
-                left: 0;
-                top: 2em;
-                z-index: 999;
-            }
-    
-            h1 {
-                opacity: 0.5;
-                font-size: 1em;
-            }
-        </style>
-    </head>
-    <body>
-        <button type="button" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')">Press Me</button>
-        <button onclick="layout()">Layout</button>
-        <button onclick="show()">Show</button>
-        <div id="cy"></div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.23.0/cytoscape.min.js"
-            integrity="sha512-gEWKnYYa1/1c3jOuT9PR7NxiVI1bwn02DeJGsl+lMVQ1fWMNvtjkjxIApTdbJ/wcDjQmbf+McWahXwipdC9bGA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.5.7/shim.min.js"></script>
-        <script src="https://unpkg.com/layout-base/layout-base.js"></script>
-        <script src="https://unpkg.com/cose-base/cose-base.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/cytoscape-cose-bilkent@4.1.0/cytoscape-cose-bilkent.min.js"></script>
-        <script src="./TreeDb.js"></script>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: helvetica;
+            font-size: 14px;
+        }
+
+        #cy {
+            width: 100%;
+            height: calc(100% - 2em);
+            position: absolute;
+            left: 0;
+            top: 2em;
+            z-index: 999;
+        }
+
+        h1 {
+            opacity: 0.5;
+            font-size: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="find" placeholder="Find an item..." value="" onchange="show()" style="width: 20%" />
+    <button onclick="show()">Show</button>
+    <button onclick="reset()">Reset</button>
+    <button type="button" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')">Press Me</button>
+    <button onclick="layout()">Layout</button>
+    <div id="cy"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.23.0/cytoscape.min.js"
+        integrity="sha512-gEWKnYYa1/1c3jOuT9PR7NxiVI1bwn02DeJGsl+lMVQ1fWMNvtjkjxIApTdbJ/wcDjQmbf+McWahXwipdC9bGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.5.7/shim.min.js"></script>
+    <script src="https://unpkg.com/layout-base/layout-base.js"></script>
+    <script src="https://unpkg.com/cose-base/cose-base.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cytoscape-cose-bilkent@4.1.0/cytoscape-cose-bilkent.min.js"></script>
+    <script src="./TreeDb.js"></script>
+</body>
+
 </html>

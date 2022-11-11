@@ -1,8 +1,13 @@
-window.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('DOMContentLoaded', () => {
+    const q = document.getElementById('find');
+    window.show = function show() {
+        console.log(q.value);
+    }
     fetch("./data.json").then((a) => a.json()).then((data) => {
         const nodes = [];
         const edges = [];
-    
+
+
         function item(obj) {
             console.log(obj);
             nodes.push({
@@ -26,30 +31,31 @@ window.addEventListener('DOMContentLoaded', function () {
                 });
             });
         }
-    
+
+
         item(data);
-    
+
         var cy = window.cy = cytoscape({
             container: document.getElementById('cy'),
-    
+
             boxSelectionEnabled: false,
             autounselectify: true,
-    
+
             layout: {
                 name: 'cose-bilkent'
             },
-    
+
             style: [
                 {
                     selector: 'node',
                     style: {
                         // 'background-color': '#C6681E',
-    
+
                         'background-image': ["data(image)"],
                         "text-valign": "center",
                         "width": 100,
                         "height": 100
-    
+
                     }
                 },
                 {
@@ -65,11 +71,17 @@ window.addEventListener('DOMContentLoaded', function () {
                 {
                     selector: "[text]",
                     style: {
-                        'label' : 'data(text)',
+                        'label': 'data(text)',
+                    }
+                },
+                {
+                    selector: ".highlight",
+                    style: {
+                        "background-color": "yellow"
                     }
                 }
             ],
-    
+
             elements: {
                 nodes,
                 edges
@@ -78,6 +90,18 @@ window.addEventListener('DOMContentLoaded', function () {
 
         window.layout = () => cy.layout({ name: "cose-bilkent" }).run();
 
-        // window.show = () => 
+        var findInput = document.getElementById("find");
+        var items = [];
+        window.show = () => (items = [], cy.elements().depthFirstSearch({
+            roots: cy.getElementById(findInput.value),
+            visit: function(v, e, u, i, depth) {
+                if (depth > 2) {
+                    items.push(v);
+                }
+            },
+            directed: false
+        }), items.forEach((i) => i.remove()));
+        
+        window.reset = () => cy.elements(nodes.concat(edges));
     });
 });
