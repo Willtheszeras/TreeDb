@@ -92,7 +92,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
         var findInput = document.getElementById("find");
         var items = [];
-        window.show = () => (items = [], cy.getElementById(findInput.value).addClass("highlight"), cy.elements().depthFirstSearch({
+        window.show = () => (items = [], (cy.getElementById(findInput.value)[0] ?? window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')).addClass("highlight"), cy.elements().depthFirstSearch({
             roots: cy.getElementById(findInput.value),
             visit: function(v, e, u, i, depth) {
                 if (depth > 2) {
@@ -102,6 +102,6 @@ window.addEventListener('DOMContentLoaded', () => {
             directed: false
         }), items.forEach((i) => i.remove()));
         
-        window.reset = () => cy.add(nodes.concat(edges));
+        window.reset = () => (cy.elements().remove(), cy.add(nodes.concat(edges)), layout());
     });
 });
